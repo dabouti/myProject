@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbarlist {
+    display: flex;
+    list-style: none;
+}
+
+.navbarlist li {
+    margin: 0px 25px;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+}
+
+#logo {
+    font-size: 20px;
+}
+
+#outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+
+.carlayout {
+    background-color: wheat;
+    border-radius: 10px;
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+.carimg {
+    height: 150px;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.cartitle {
+    text-align: center;
+}
+
+select {
+    width: 200px;
+    display: block;
+}
+
+.selectcontainer {
+    margin: 10px 25%;
+}
+
+#background {
+    background-color: rgb(238, 236, 236);
+    margin-top: -30px;
+    padding-bottom: 40px;
+}
+
+#btn {
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+}
+
+#btn:hover {
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(6, 79, 6);
+}
+
+#btn:disabled {
+    background-color: #a19d9d;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+#btn-design {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.selection {
+    color: rgb(93, 91, 91);
+    text-decoration: none;
+}
+
+.selection:hover {
+    text-decoration: underline;
+}
+
+.selection.active {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+.hr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.simple-hr {
+    width: 75%;
+    height: 4px;
+    background-color: black;
+    border: none;
+    margin: 0 -4px;
+}
+
+.bullet {
+    color: black;
+    font-size: 32px;
+    margin-top: -2px;
+}
+
+#about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25%
+}
+
+.about-box-odd {
+    width: 300px;
+    margin: 4px 0;
+    height: auto;
+    background-color: grey;
+    color: white;
+    padding: 20px;
+}
+
+.about-box-even {
+    width: 300px;
+    margin: 4px 0;
+    height: auto;
+    background-color: #d6c4c4;
+    padding: 20px;
+}
+
+#results {
+    text-align: center;
+}
