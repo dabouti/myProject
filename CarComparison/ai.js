@@ -10,10 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         addMessage(message, "User");
-        message.value = "";
-        await sendMessage(message);
-
+        message = "";
         loadingScreen();
+        await sendMessage(message);
     })
 })
 
