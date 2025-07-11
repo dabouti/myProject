@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="logo">
+            Car Comparitor
+        </div>
+        <ul class="navbarlist">
+            <li>
+                <a class="selection active" href="#">Compare</a>
+            </li>
+            <li>
+                <a class="selection" href="ai.html">AI</a>
+            </li>
+            <li>
+                <a class="selection" href="#">Quiz</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="background">
+        <h1 id="title">Car Comparison</h1>
+        <div id="outline">
+            <div class="carlayout">
+                <h2 class="cartitle">First Car</h2>
+                <div class="imgcontainer">
+                    <img src="car.png" class="carimg">
+                </div>
+                <div class="selectcontainer">Brand:
+                    <select id="brandsel">
+
+                    </select>
+                </div>
+                <div class="selectcontainer">Model:
+                    <select id="modelsel">
+
+                    </select>
+                </div>
+                <div class="selectcontainer">Year:
+                    <select id="yearsel">
+
+                    </select>
+                </div>
+            </div>
+            <div class="carlayout">
+                <h2 class="cartitle">Second Car</h2>
+                <div class="imgcontainer">
+                    <img src="car2.png" class="carimg">
+                </div>
+                <div class="selectcontainer">Brand:
+                    <select id="brandsel2">
+
+                    </select>
+                </div>
+                <div class="selectcontainer">Model:
+                    <select id="modelsel2">
+
+                    </select>
+                </div>
+                <div class="selectcontainer">Year:
+                    <select id="yearsel2">
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="btn-design">
+            <button id="btn" disabled>Search</button>
+        </div>
+        <div id="hidden" style="display:none">
+            <div class="hr-container">
+                <span class="bullet">●</span>
+                <hr class="simple-hr">
+                <span class="bullet">●</span>
+            </div>
+            <h2 id="results">Results</h2>
+            <div id="about-container">
+                <div>
+                    <div class="about-box-odd">
+                        MSRP:
+                        <div id="msrp"></div>
+                    </div>
+                    <div class="about-box-even">
+                        Category:
+                        <div id="category"></div>
+                    </div>
+                    <div class="about-box-odd">
+                        Number of Cylinders:
+                        <div id="cy"></div>
+                    </div>
+                    <div class="about-box-even">
+                        Drive Type:
+                        <div id="dr"></div>
+                    </div>
+                    <div class="about-box-odd">
+                        Fuel Type:
+                        <div id="fuel"></div>
+                    </div>
+                    <div class="about-box-even">
+                        Transmission Type:
+                        <div id="trans"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-box-odd">
+                        MSRP:
+                        <div id="msrp2"></div>
+                    </div>
+                    <div class="about-box-even">
+                        Category:
+                        <div id="category2"></div>
+                    </div>
+                    <div class="about-box-odd">
+                        Number of Cylinders:
+                        <div id="cy2"></div>
+                    </div>
+                    <div class="about-box-even">
+                        Drive Type:
+                        <div id="dr2"></div>
+                    </div>
+                    <div class="about-box-odd">
+                        Fuel Type:
+                        <div id="fuel2"></div>
+                    </div>
+                    <div class="about-box-even">
+                        Transmission Type:
+                        <div id="trans2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
