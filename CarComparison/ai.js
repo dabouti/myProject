@@ -1,7 +1,11 @@
+let messageContainer;
+let sendBtn;
+let userInput;
+
 document.addEventListener("DOMContentLoaded", () => {
-    let messageContainer = document.getElementById("message-container");
-    let sendBtn = document.getElementById("send");
-    let userInput = document.getElementById("user-input");
+    messageContainer = document.getElementById("message-container");
+    sendBtn = document.getElementById("send");
+    userInput = document.getElementById("user-input");
 
     sendBtn.addEventListener("click", async () => {
         const message = userInput.value;
@@ -10,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         addMessage(message, "User");
-        message = "";
+        userInput.value = "";
         loadingScreen();
         await sendMessage(message);
     })
@@ -47,7 +51,7 @@ async function addMessage(message, sender) {
     else {
         messageBox.className = "user-message"
     }
-    messageBox.innerHTML = `<strong>${sender}</strong>${message}</h3>`
+    messageBox.innerHTML = `<strong>${sender}</strong>: ${message}</h3>`
     messageContainer.appendChild(messageBox);
 }
 

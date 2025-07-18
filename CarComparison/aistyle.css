@@ -85,3 +85,11 @@ body {
     max-width: 70%;
     margin-top: 25px;
 }
+
+#loading {
+    background: #dadee1;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    margin-top: 25px;
+}
